@@ -1,13 +1,17 @@
 package com.example.demo3.shuju;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 import java.sql.Timestamp;
 
 @Component
+@ApiModel
 public class EmpClass {
+    @ApiModelProperty(value = "员工姓名", example = "zhangsan",required = true)
    private String name;
    private int age;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
