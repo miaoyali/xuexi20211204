@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TryAspectClass {
 
-    @Before("execution(* *.com.example.demo3.controller.*.*(..))")
+    @Before("execution(* com.example.demo3.controller.*.*(..))")
     public void  doSome(){
         System.out.println("doSome");
     }

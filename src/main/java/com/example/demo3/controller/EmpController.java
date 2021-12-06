@@ -27,7 +27,7 @@ public class EmpController {
     //http://localhost:8080/swagger-ui.html
     @RequestMapping(value = "/huoqu/{name}" , method = RequestMethod.GET)
     @ApiOperation(value = "根据姓名查找员工全部信息")
-    private EmpClass findOne(@PathVariable("name") String name){
+    public EmpClass findOne(@PathVariable("name") String name){
         System.out.println("进入根据姓名查找员工全部信息的方法了");
         //redisTemplate.opsForValue().set("HHH","123");
         //System.out.println(redisTemplate.opsForValue().get("HHH"));
