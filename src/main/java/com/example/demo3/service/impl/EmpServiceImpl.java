@@ -15,7 +15,6 @@ public class EmpServiceImpl implements EmpService {
 
     @Override
     public EmpClass findOne(String name) {
-
         return empRepository1.findOne(name);
     }
 }

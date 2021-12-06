@@ -14,4 +14,9 @@ public class HelloClass {
         logger.info("hhh");
         return "hello";
     }
+    @RequestMapping(value = "/yichang")
+    private String yichang(){
+        throw new NullPointerException();
+       // return "hello";
+    }
 }
